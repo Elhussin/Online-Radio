@@ -52,32 +52,48 @@ class color{
 
 onload =new color();
 
+class Volume_r{
+    constructor(){
+        this.audiosrc=document.getElementById("audiosrc") ;
+        
+
+        var valume1=document.getElementById("volume");
+        this.audiosrc.volume= 50/100;
+        
+        valume1.addEventListener("change",()=>{
+         this.audiosrc.volume = valume1.value / 100 ;
+        } );
+    }
+
+}
+onload = new Volume_r();
+
+
+
+
+
+
+
+
+
 class valume_p{
     constructor(){
         this.audiosrc=document.getElementById("audiosrc") ;
-          this.speed1=document.getElementById("Speed");
-          this.valume1=document.getElementById("volume");
 
-          this.audiosrc.valume =50/100;
-          this.valume1.addEventListener("change",()=>{
-            this.audiosrc.valume= this.valume1.value/2;
-          });
-         this.speed1.playbackRate =50/100;
-          this.speed1.addEventListener("change",()=>{
-            
-            this.audiosrc.playbackRate=this.speed1.value/100;
-      
-      
-        })
-    
+        var speed1=document.getElementById("Speed");
+        speed1.addEventListener("change",()=>{
+            this.audiosrc.playbackRate=speed1.value/100;
+        });
+       
     }
+
 }
+
 
 
 onload = new valume_p();
 
 
-// class main
 class player{
     constructor(){
        this.main=document.getElementById("main")
@@ -92,3 +108,4 @@ class player{
 };
 
 onload = new player();
+
