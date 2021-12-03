@@ -8,8 +8,8 @@ class sation{
         this.play1.addEventListener("click",()=>{
            this.play_pause();
         });
-        this.count=0;
-
+      
+     
         // next button
         this.next=document.getElementById("next");
         this.next.addEventListener("click",()=>{
@@ -19,13 +19,12 @@ class sation{
                 this.play_P=false;
             }else {
                 this.count=0
-                this.play_P=true;
+                // this.play_P=true;
                 
             }
-
-       localStorage.setItem("save_sta",this.count)
+     localStorage.setItem("save_sta",this.count)
           this.radio_src();
-          this.play_pause()
+        //   this.play_pause()
         })
 
 
@@ -40,11 +39,11 @@ class sation{
                 this.play_P=false;
             }else {
                 this.count=this.radio.length-1
-                this.play_P=true;
+                // this.play_P=true;
             }
            localStorage.setItem("save_sta",this.count)
             this.radio_src()
-            this.play_pause()
+            // this.play_pause()
             
         });
 
@@ -75,13 +74,14 @@ class sation{
 
         
 
-        
+        this.count=0;
 
 
 
         this.radio_src();
         this.play_pause();
         
+
     }
 
     radio_src(){
@@ -95,23 +95,29 @@ class sation{
    this.play_pause();
     }
 
+
     play_pause(){
         if(this.play_P==false){
         this.play1.src="./fileR/pause.png"
         this.audiosrc.play();
         this.play_P=true;
 
+
     }else{
         this.play1.src="./fileR/play.png"
         this.audiosrc.pause();
         this.play_P=false;
        
-
+     
         
     }
 
 
     }
+
+
+
 }
 
 onload =new sation();
+
