@@ -98,13 +98,13 @@ class sation{
 
     play_pause(){
         if(this.play_P==false){
-        this.play1.src="./fileR/pause.png"
+        this.play1.src="./files/img/pause.png"
         this.audiosrc.play();
         this.play_P=true;
 
 
     }else{
-        this.play1.src="./fileR/play.png"
+        this.play1.src="./files/img/play.png"
         this.audiosrc.pause();
         this.play_P=false;
        
