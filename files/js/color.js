@@ -35,14 +35,14 @@ class color{
 
     body_color(color){
         if(color=="colorB1" ){
-            document.body.style.background="rgb(4 212 241 / 86%)";
+            document.body.style.background="rgba(90, 47, 99, 0.86)";
         }else if (color=="colorB2"){
-            document.body.style.background="#fff63b"
+            document.body.style.background="#162131"
         }else if (color=="colorB3"){
             document.body.style.background="#080808"
 
         }else if (color=="colorB4"){
-            document.body.style.background="#035439cc"
+            document.body.style.background="#eff1f1cc"
         }
 
         localStorage.setItem("ba_gr", color)
