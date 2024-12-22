@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta tags to set character encoding, compatibility, and viewport for responsive design -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Radio</title>
+    
+    <!-- Favicon for the page -->
     <link rel="icon" href="./files/img/live.jpg">
+    
+    <!-- External stylesheet for styling the page -->
     <link rel="stylesheet" href="./files/css/styl.css">
 </head>
+
 <body>
-
+    <!-- Navigation section (empty in this case, can be expanded later) -->
     <nav>
-
+        <!-- Navigation content can be added here -->
     </nav>
 
-
     <main id="main">
+        <!-- Main content of the page -->
+
         <div id="div_up">
+            <!-- Div containing the radio logo and station name -->
+            <img src="./files/img/live.jpg" alt="Radio Logo">
 
-            <img src="./files/img/live.jpg" alt="">
-
+            <!-- Display current radio station name -->
             <p id="sation_N">Radio</p>
         </div>
 
         <div id="div_b">
-     <img id="back" src="./files/img/back.png" alt="">
-      
-        <img id="play" src="./files/img/play.png" alt="">
-        <img id="next" src="./files/img/next.png"alt="">
-        
-        <audio id="audiosrc" src="https://live.radiomasr.net/RADIOMASR"></audio>
-     
-    </div>
+            <!-- Controls for the radio player -->
+            <!-- Back button to switch to the previous station -->
+            <img id="back" src="./files/img/back.png" alt="Back Station">
 
-    <div id="volu_sped" >
-  
-   
-       <h2>Volume</h2>    
-       <input id="volume" type="range"> 
-  
-       <h2>Speed</h2>
-       <input id="Speed" type="range" max="200" min="0">
-    </div>
-    <div id="div_color">
-        <button id="color1"></button>
-        <button id="color2"></button>
+            <!-- Play/Pause button for controlling the radio playback -->
+            <img id="play" src="./files/img/play.png" alt="Play/Pause Radio">
 
-        <button id="color3"></button>
+            <!-- Next button to switch to the next station -->
+            <img id="next" src="./files/img/next.png" alt="Next Station">
+            
+            <!-- Audio element that handles the playback of the selected radio station -->
+            <audio id="audiosrc" src="https://live.radiomasr.net/RADIOMASR"></audio>
+        </div>
 
-        <button id="color4"></button>
+        <div id="volu_sped">
+            <!-- Volume and speed control settings -->
 
+            <h2>Volume</h2>
+            <!-- Volume control slider -->
+            <input id="volume" type="range">
 
+            <h2>Speed</h2>
+            <!-- Speed control slider (to adjust playback speed of the radio) -->
+            <input id="Speed" type="range" max="200" min="0">
+        </div>
 
-
-    </div>
-
-
-
+        <div id="div_color">
+            <!-- Color selection buttons to change the background color of the page -->
+            <button id="color1"></button>
+            <button id="color2"></button>
+            <button id="color3"></button>
+            <button id="color4"></button>
+        </div>
     </main>
-    
 
+    <!-- External JavaScript files for functionality -->
     <script src="./files/js/radio.js"></script>
     <script src="./files/js/color.js"></script>
 </body>
+
 </html>
