@@ -40,6 +40,7 @@ Open the **index.html** file in your browser to start using the radio web app.
 - **files/js/color.js**: JavaScript file managing the background color change feature of the page.
 
 ## How It Works
+
 **HTML (index.html)**
 The HTML file provides the basic structure of the app. It includes the audio element, buttons for play/pause, next/back, and controls for volume and speed adjustment. Additionally, it includes buttons for changing the background color.
 
@@ -62,14 +63,18 @@ color.js: This file handles the background color change functionality. It allows
    The app includes buttons that allow users to change the background color of the webpage. The colors are stored in localStorage so the user's preference is retained when they revisit the page.
 
 ## Example Usage
+
 - Click the **Play** button to start listening to the current radio station.
 - Use the **Next** and **Back** buttons to switch between stations.
 - Adjust the **Volume** slider to control the audio volume.
 - Use the **Speed** slider to change the playback speed of the radio stream.
 - Change the **Background** Color by clicking on one of the color buttons.
+
 ## Credits
+
 - **Radio Stations**: The radio URLs used in this project are publicly available streaming links.
 - **Icons**: The play, pause, next, and back buttons use custom images (.png files) stored in the files/img directory.
 
 ## License
-This project is open source and available under the MIT License. See the LICENSE file for more information.
+
+This project is open source and available under the MIT [License](LICENSE). See the LICENSE file for more information.
